@@ -5,6 +5,11 @@ export const pool = createPool({
   port: 3306,
   user: 'root',
   password: 'juanpassword',
-  database: 'tasksbd'
+  database: 'tasksdb'
 })
+try {
+  console.log("Conectado a la base de datos")
+} catch (error) {
+  console.log(error)
+}
 
